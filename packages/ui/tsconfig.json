@@ -4,7 +4,8 @@
     "strictNullChecks": true,
     "noUncheckedIndexedAccess": true,
     "baseUrl": ".",
-    "rootDir": "."
+    "rootDir": ".",
+    "allowJs": true
     // "paths": {
     //   "@/*": ["./*"]
     // }
@@ -13,10 +14,9 @@
   "include": [
     "./**/*.ts",
     "./**/*.tsx",
-    "design/tailwind/theme.js",
     "./*.ts",
-    "utils/tailwind/colors.js",
-    "utils/tailwind/utils.js"
+    "utils/tailwind/*.js",
+    ".eslintrc.js"
   ],
   "exclude": ["node_modules"]
 }

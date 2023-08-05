@@ -4,6 +4,9 @@
   "main": "./index.ts",
   "types": "./index.tsx",
   "license": "MIT",
+  "scripts": {
+    "lint": "eslint \"{utils,stabs,providers,pages,hooks,components}/**/*.{ts,tsx}\" --fix"
+  },
   "devDependencies": {
     "@mj/eslint": "workspace:*",
     "@mj/tailwind": "^0.1.0",
