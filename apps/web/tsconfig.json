@@ -30,7 +30,8 @@
     "**/*.tsx",
     ".next/types/**/*.ts",
     "test-setup.js",
-    "tailwind.config.ts"
+    "tailwind.config.ts",
+    ".eslintrc.js"
   ],
 
   "exclude": ["node_modules"]

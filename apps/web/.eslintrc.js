@@ -1,5 +1,7 @@
 module.exports = {
-  exports: ['@mj/eslint/eslint-base', '@mj/eslint/eslint-react'],
+  // extends: ['@mj/eslint/eslint-base.js', '@mj/eslint/eslint-react.js'],
+  ...require('@mj/eslint/eslint-base.js'),
+  ...require('@mj/eslint/eslint-react.js'),
   root: true,
   parserOptions: {
     tsconfigRootDir: __dirname,

@@ -8,7 +8,7 @@
     "start": "next start",
     "test": "vitest -w",
     "coverage": "vitest --coverage",
-    "lint": "eslint src --fix",
+    "lint": "eslint  \"./src/**/*.{ts,tsx}\"  --fix",
     "lint:fix": "pnpm lint --fix",
     "clean": "git clean -xdf .next .turbo node_modules",
     "type-check": "tsc --noEmit"
