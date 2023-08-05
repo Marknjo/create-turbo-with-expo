@@ -24,7 +24,9 @@
     "index.tsx",
     "*.js",
     ".expo/types/**/*.ts",
-    "expo-env.d.ts"
+    "expo-env.d.ts",
+    ".eslintrc.js",
+    "./expo-plugins/with-modify-gradle.js"
   ],
   "exclude": ["node_modules", "*.config.js"]
 }
