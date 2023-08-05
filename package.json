@@ -1,0 +1,34 @@
+{
+  "private": true,
+  "scripts": {
+    "build": "turbo run build",
+    "dev": "turbo run dev --parallel",
+    "preview": "turbo run start",
+    "lint": "turbo lint && manypkg check",
+    "lint:fix": "turbo lint:fix && manypkg fix",
+    "clean": "turbo clean && rm -rf node_modules ./**/node_modules ./**/**/node_modules ./**/**/**/node_modules pnpm-lock.yaml",
+    "clean:git": "git clean -xdf node_modules",
+    "format": "prettier --write \"**/*.{ts,tsx,js,jsx,json,md}\" --ignore-path .gitignore",
+    "test": "turbo run test",
+    "type-check": "turbo type-check",
+    "coverage": "vitest --coverage",
+    "//": "prepare: husky install",
+    "publish-packages": "turbo run lint build && changeset version && changeset publish"
+  },
+  "devDependencies": {
+    "@ianvs/prettier-plugin-sort-imports": "^4.1.0",
+    "@manypkg/cli": "^0.21.0",
+    "@mj/eslint": "workspace:*",
+    "@turbo/gen": "^1.10.12",
+    "esbuild": "^0.18.17",
+    "husky": "^8.0.3",
+    "identity-obj-proxy": "^3.0.0",
+    "lint-staged": "^13.2.3",
+    "msw": "^1.2.3",
+    "prettier": "^3.0.1",
+    "prettier-plugin-tailwindcss": "^0.4.1",
+    "turbo": "latest"
+  },
+  "packageManager": "pnpm@8.6.11",
+  "name": "storybook-with-solito"
+}

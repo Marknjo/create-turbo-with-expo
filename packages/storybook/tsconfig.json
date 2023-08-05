@@ -1,0 +1,21 @@
+{
+  "extends": "@mj/tsconfig/react.json",
+  "compilerOptions": {
+    /* Paths */
+    "baseUrl": ".",
+    "rootDir": ".",
+    "paths": {
+      "@comps/*": ["./components/*"]
+    }
+  },
+  "include": [
+    "./**/*.ts",
+    "./**/*.tsx",
+    "./*.ts",
+    "./**/*.mdx",
+    "../ui/components/Buttons/MyButtons.tsx",
+    "postcss.config.mjs",
+    "types/images.d.ts"
+  ],
+  "exclude": ["node_modules"]
+}

@@ -1,0 +1,37 @@
+{
+  "extends": "@mj/tsconfig/nextjs.json",
+  "compilerOptions": {
+    "jsx": "preserve",
+    "baseUrl": ".",
+    "paths": {
+      "@pages/*": ["src/components/pages/*"],
+      "@ui/*": ["src/components/ui/*"],
+      "@layouts/*": ["src/components/layouts/*"],
+      "@utils/*": ["src/components/utils/*"],
+      "@data/*": ["src/data/*"],
+      "@lib/*": ["src/lib/*"],
+      "@store/*": ["src/store/*"],
+      "@server/*": ["src/server/*"]
+    },
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ],
+    "strict": false
+  },
+  "include": [
+    "next-env.d.ts",
+    "src",
+    "*.ts",
+    "*.mjs",
+    ".next/types/**/*.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    ".next/types/**/*.ts",
+    "test-setup.js",
+    "tailwind.config.ts"
+  ],
+
+  "exclude": ["node_modules"]
+}

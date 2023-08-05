@@ -1,0 +1,8 @@
+#!/bin/sh
+. "$(dirname "$0")/_/husky.sh"
+
+# Only with test
+# npm run test && npx lint-staged
+
+# only lint - don't run tests
+npx lint-staged

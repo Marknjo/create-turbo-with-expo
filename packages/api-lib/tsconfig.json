@@ -1,0 +1,21 @@
+{
+  "extends": "@mj/tsconfig/server.json",
+  "compilerOptions": {
+    /* Paths */
+    "baseUrl": ".",
+    "rootDir": ".",
+    "paths": {
+      "@src/*": ["./src/*"]
+    }
+  },
+  "include": [
+    "./**/*.ts",
+    "./**/*.tsx",
+    "./*.ts",
+    "./**/*.mdx",
+    "../ui/components/Buttons/MyButtons.tsx",
+    "postcss.config.mjs",
+    "postcss.config.js"
+  ],
+  "exclude": ["node_modules"]
+}

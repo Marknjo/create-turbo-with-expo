@@ -1,0 +1,13 @@
+{
+  "name": "@mj/lib",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {},
+  "devDependencies": {
+    "@mj/api": "workspace:*",
+    "@mj/tsconfig": "workspace:*",
+    "typescript": "^5.1.6",
+    "eslint": "^8.46.0",
+    "@types/node": "^20.4.7"
+  }
+}

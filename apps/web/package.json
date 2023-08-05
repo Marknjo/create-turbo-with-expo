@@ -1,0 +1,48 @@
+{
+  "name": "@mj/web",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev --port 3005",
+    "build": "next build",
+    "start": "next start",
+    "test": "vitest -w",
+    "coverage": "vitest --coverage",
+    "lint": "eslint src --fix",
+    "lint:fix": "pnpm lint --fix",
+    "clean": "git clean -xdf .next .turbo node_modules",
+    "type-check": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@expo/next-adapter": "5.0.2",
+    "@mj/mobile": "workspace:*",
+    "@mj/ui": "workspace:*",
+    "@t3-oss/env-nextjs": "^0.6.0",
+    "@tanstack/react-query": "5.0.0-beta.9",
+    "@tanstack/react-query-devtools": "5.0.0-beta.9",
+    "@tanstack/react-query-next-experimental": "5.0.0-beta.9",
+    "next": "^13.4.12",
+    "raf": "^3.4.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "setimmediate": "^1.0.5",
+    "zod": "^3.21.4"
+  },
+  "devDependencies": {
+    "@mj/eslint": "workspace:*",
+    "@mj/tailwind": "workspace:*",
+    "@mj/tsconfig": "workspace:*",
+    "@testing-library/jest-dom": "^5.17.0",
+    "@testing-library/react": "^14.0.0",
+    "@types/node": "^20.4.7",
+    "@types/react": "^18.2.18",
+    "@types/testing-library__jest-dom": "^5.14.9",
+    "autoprefixer": "^10.4.14",
+    "eslint": "^8.46.0",
+    "jsdom": "^22.1.0",
+    "postcss": "^8.4.27",
+    "tailwindcss": "^3.3.3",
+    "typescript": "^5.1.6",
+    "vitest": "^0.33.0"
+  }
+}

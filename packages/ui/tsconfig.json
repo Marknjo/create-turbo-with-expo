@@ -1,0 +1,22 @@
+{
+  "extends": "@mj/tsconfig/nextjs.json",
+  "compilerOptions": {
+    "strictNullChecks": true,
+    "noUncheckedIndexedAccess": true,
+    "baseUrl": ".",
+    "rootDir": "."
+    // "paths": {
+    //   "@/*": ["./*"]
+    // }
+  },
+  "types": ["nativewind/types"],
+  "include": [
+    "./**/*.ts",
+    "./**/*.tsx",
+    "design/tailwind/theme.js",
+    "./*.ts",
+    "utils/tailwind/colors.js",
+    "utils/tailwind/utils.js"
+  ],
+  "exclude": ["node_modules"]
+}

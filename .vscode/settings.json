@@ -1,0 +1,14 @@
+{
+  "cSpell.words": [
+    "autodocs",
+    "ianvs",
+    "manypkg",
+    "moti",
+    "nativewind",
+    "solito",
+    "VIEWPORTS"
+  ],
+  "tailwindCSS.experimental.classRegex": [
+    ["clsx\\(([^)]*)\\)", "(?:'|\"|`)([^']*)(?:'|\"|`)"]
+  ]
+}

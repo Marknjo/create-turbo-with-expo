@@ -1,0 +1,30 @@
+{
+  "extends": "@mj/tsconfig/react-native.json",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@screens/*": ["src/components/screens/*"],
+      "@hooks/*": ["./src/hooks/*"],
+      "@ui/*": ["./src/components/ui/*"],
+      "@modules/*": ["./src/modules/*"],
+      "@constants/*": ["./src/constants/*"],
+      "@utils/*": ["./src/components/utils/*"],
+      "@data/*": ["./src/data/*"],
+      "@lib/*": ["./src/lib/*"],
+      "@store/*": ["./src/store/*"],
+      "@server/*": ["./src/server/*"]
+    },
+    "jsx": "react-native",
+    "types": ["nativewind/types"]
+  },
+  "include": [
+    "expo-plugins",
+    "src",
+    "*.ts",
+    "index.tsx",
+    "*.js",
+    ".expo/types/**/*.ts",
+    "expo-env.d.ts"
+  ],
+  "exclude": ["node_modules", "*.config.js"]
+}
