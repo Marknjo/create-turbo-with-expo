@@ -2,7 +2,6 @@ import React from 'react'
 import type { Meta, StoryObj } from '@storybook/react'
 import { userEvent, waitFor, within } from '@storybook/testing-library'
 import { expect } from '@storybook/jest'
-
 import { ButtonSize, Button, ButtonVariants } from '@mj/ui/components/Buttons'
 import { EnhancedView, View } from '@comps/View'
 
