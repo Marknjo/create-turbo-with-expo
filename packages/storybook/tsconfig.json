@@ -2,7 +2,7 @@
   "extends": "@mj/tsconfig/react.json",
   "compilerOptions": {
     /* Paths */
-    "baseUrl": ".",
+    // "baseUrl": ".",
     "rootDir": ".",
     "paths": {
       "@comps/*": ["./components/*"]
@@ -15,7 +15,8 @@
     "./**/*.mdx",
     "../ui/components/Buttons/MyButtons.tsx",
     "postcss.config.mjs",
-    "types/images.d.ts"
+    "types/images.d.ts",
+    ".eslintrc.js"
   ],
   "exclude": ["node_modules"]
 }

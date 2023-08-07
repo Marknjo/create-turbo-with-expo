@@ -8,6 +8,7 @@
     "build": "storybook build --docs",
     "preview-storybook": "serve storybook-static",
     "clean": "rm -rf .turbo && rm -rf node_modules",
+    "lint": "eslint \"{components,docs,stabs,stories}/**/*.{ts,tsx}\" --fix",
     "test": "test-storybook",
     "test:watch": "test-storybook --watch",
     "test:coverage": "test-storybook --coverage"
