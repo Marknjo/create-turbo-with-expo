@@ -29,6 +29,6 @@
     "prettier-plugin-tailwindcss": "^0.4.1",
     "turbo": "latest"
   },
-  "packageManager": "pnpm@8.6.11",
+  "packageManager": "pnpm@8.6.12",
   "name": "storybook-with-solito"
 }
