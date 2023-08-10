@@ -2,7 +2,7 @@ services:
   db:
     image: mongo
     restart: always
-    container_name: mongo-db
+    container_name: cnt-mongo-db
     ports:
       - 27017:27017
     env_file:
@@ -10,10 +10,19 @@ services:
     volumes:
       - db-data:/data/db
 
+  db-test:
+    image: mongo
+    restart: always
+    container_name: cnt-test-db
+    ports:
+      - 27018:27017
+    env_file:
+      - ./.env.test.local
+
   admin:
     image: mongo-express
     restart: always
-    container_name: mongo-admin
+    container_name: cnt-mongo-admin
     ports:
       - 8081:8081
     env_file:
