@@ -2,7 +2,7 @@ import { env } from 'process'
 import { Module } from '@nestjs/common'
 import { AppController } from './app.controller'
 import { AppService } from './app.service'
-import { ConfigModule, ConfigService } from '@nestjs/config'
+import { ConfigModule } from '@nestjs/config'
 import validationSchema from './common/utils/envs.config'
 import appConfig from './common/utils/app.config'
 // import { MongooseModule } from '@nestjs/mongoose'
@@ -10,7 +10,7 @@ import appConfig from './common/utils/app.config'
 @Module({
   imports: [
     ConfigModule.forRoot({
-      envFilePath: '.env',
+      envFilePath: `.env.${env.NODE_ENV}.local`,
       load: [appConfig],
       validationSchema: validationSchema(),
       validationOptions: {
