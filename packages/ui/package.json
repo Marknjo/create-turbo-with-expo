@@ -11,7 +11,7 @@
     "@mj/eslint": "workspace:*",
     "@mj/tailwind": "^0.1.0",
     "@mj/tsconfig": "workspace:*",
-    "@types/react": "^18.2.18",
+    "@types/react": "^18.2.20",
     "@types/react-dom": "^18.2.7",
     "@types/react-native": "^0.72.2",
     "eslint": "^8.47.0",
