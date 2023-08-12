@@ -6,7 +6,7 @@
   "devDependencies": {
     "@mj/api": "workspace:*",
     "@mj/tsconfig": "workspace:*",
-    "@types/node": "^20.4.7",
+    "@types/node": "^20.4.10",
     "eslint": "^8.47.0",
     "typescript": "^5.1.6"
   }
