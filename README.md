@@ -47,12 +47,13 @@ All components coming from UI lib to web app (nestjs) must be declared with "use
     - `secret-generator.mjs` - file helps generate unique secrets/passwords
     - `src` - all api modules goes in here
 
-- `packages` shared packages across apps
+- `configs` as of v0.1.0 configs are in their own workspace
+  - `tsconfig` - customizes typescript configurations
+  - `tailwind` - customize tailwind config here
+  - `eslint`   - all customized eslint configs
+  - `prettier` - prettier custom configs - run example `pnpm -F web format`. Note there is still `.prettierrc` in the monorepo directory. If you do not like running cli to format, comment/remove the `"prettier": "@mj/prettier"` settings in each **package.json** file like in the `@mj/api`. Removing it will default to the global prettier settings & on every save prettier will format the document as usual.
 
-  - configs
-    - `tsconfig` - customizes typescript configurations
-    - `tailwind` - customize tailwind config here
-    - `eslint` - all customized eslint configs
+- `packages` shared packages across apps
   - `storybook` Your workshop residence
 
     - `stories` - create all stories in this folder. NOTE: due to setup it is not possessible to colocate component, since we're using ui
