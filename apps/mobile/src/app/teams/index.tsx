@@ -18,6 +18,7 @@ export default function TeamScreen() {
     >
       <Stack.Screen
         options={{
+          headerShown: true,
           title: 'Teams',
         }}
       />

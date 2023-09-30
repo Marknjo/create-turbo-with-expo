@@ -1,0 +1,39 @@
+{
+  "name": "@mj/tailwind",
+  "version": "0.1.0",
+  "private": true,
+  "license": "MIT",
+  "main": "index.ts",
+  "files": [
+    "index.ts",
+    "postcss.js",
+    "globals.css",
+    "storybooks.css"
+  ],
+  "scripts": {
+    "clean": "rm -rf .turbo node_modules",
+    "format": "prettier --check \"**/*.{mjs,ts,md,json}\"",
+    "lint": "eslint .",
+    "typecheck": "tsc --noEmit"
+  },
+  "prettier": "@mj/prettier",
+  "eslintConfig": {
+    "extends": [
+      "@mj/eslint/base"
+    ],
+    "root": true
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@mj/eslint": "^0.1.0",
+    "@mj/prettier": "^0.1.0",
+    "@mj/tsconfig": "^0.1.0",
+    "@tailwindcss/forms": "^0.5.6",
+    "autoprefixer": "^10.4.16",
+    "eslint": "^8.50.0",
+    "postcss": "8.4.31",
+    "tailwind-scrollbar": "^3.0.5",
+    "tailwindcss": "3.3.2",
+    "typescript": "^5.2.2"
+  }
+}

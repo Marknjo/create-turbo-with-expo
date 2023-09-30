@@ -1,10 +1,10 @@
-const { fontFamily } = require('tailwindcss/defaultTheme')
-const { withOpacity } = require('./utils')
-const { colors } = require('./colors')
-// const { constants } = require('./constants')
+import { fontFamily }from 'tailwindcss/defaultTheme'
+import { withOpacity }from './utils'
+import { colors }from './colors'
 
-/** @type {import('tailwindcss').Config['theme']} */
-const theme = {
+
+/* @type {import('tailwindcss').Config['theme']} */
+export const theme = {
   container: {
     center: true,
     padding: '2rem',
@@ -123,6 +123,3 @@ const theme = {
   },
 }
 
-module.exports = {
-  theme,
-}

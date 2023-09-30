@@ -1,34 +1,48 @@
 {
+  "name": "pesa-sync",
   "private": true,
+  "license": "MIT",
   "scripts": {
+    "//": "prepare: husky install",
     "build": "turbo run build",
-    "dev": "turbo run dev --parallel",
-    "preview": "turbo run start",
-    "lint": "turbo lint && manypkg check",
-    "lint:fix": "turbo lint:fix && manypkg fix",
     "clean": "turbo clean && rm -rf node_modules ./**/node_modules ./**/**/node_modules ./**/**/**/node_modules pnpm-lock.yaml",
     "clean:git": "git clean -xdf node_modules",
-    "format": "prettier --write \"**/*.{ts,tsx,js,jsx,json,md}\" --ignore-path .gitignore",
+    "coverage": "vitest --coverage",
+    "dev": "turbo run dev --parallel",
+    "format": "turbo format --continue -- --cache --cache-location='node_modules/.cache/.prettiercache'",
+    "format:fix": "turbo format --continue -- --write --continue -- --cache --cache-location='node_modules/.cache/.prettiercache'",
+    "lint": "turbo lint --continue -- --cache --cache-location 'node_modules/.cache/.eslintcache' && manypkg check",
+    "lint:fix": "turbo lint --continue -- --fix --cache --cache-location 'node_modules/.cache/.eslintcache' && manypkg fix",
+    "preview": "turbo run start",
+    "publish-packages": "turbo run lint build && changeset version && changeset publish",
     "test": "turbo run test",
     "type-check": "turbo type-check",
-    "coverage": "vitest --coverage",
-    "//": "prepare: husky install",
-    "publish-packages": "turbo run lint build && changeset version && changeset publish"
+    "typecheck": "turbo typecheck"
+  },
+  "lint-staged": {
+    "apps/**/*.{js,ts,jsx,tsx}": [
+      "eslint --fix"
+    ],
+    "packages/@mj/ui/**/*.{js,ts,jsx,tsx}": [
+      "eslint --fix"
+    ],
+    "*.json": [
+      "prettier --write"
+    ]
   },
   "devDependencies": {
-    "@ianvs/prettier-plugin-sort-imports": "^4.1.0",
     "@manypkg/cli": "^0.21.0",
-    "@mj/eslint": "workspace:*",
-    "@turbo/gen": "^1.10.12",
-    "esbuild": "^0.18.17",
-    "husky": "^8.0.3",
-    "identity-obj-proxy": "^3.0.0",
+    "@mj/eslint": "^0.1.0",
+    "@mj/prettier": "^0.1.0",
+    "@turbo/gen": "^1.10.14",
     "lint-staged": "^13.2.3",
     "msw": "^1.2.3",
-    "prettier": "^3.0.1",
-    "prettier-plugin-tailwindcss": "^0.4.1",
-    "turbo": "latest"
+    "prettier": "^3.0.3",
+    "turbo": "latest",
+    "typescript": "^5.2.2"
   },
-  "packageManager": "pnpm@8.6.12",
-  "name": "storybook-with-solito"
+  "packageManager": "pnpm@8.8.0",
+  "engines": {
+    "node": ">=18.0.0"
+  }
 }

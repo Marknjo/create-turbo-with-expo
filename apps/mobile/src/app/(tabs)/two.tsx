@@ -1,4 +1,4 @@
-import { StyleSheet, useColorScheme } from 'react-native'
+import { useColorScheme } from 'react-native'
 
 import EditScreenInfo from '@screens/EditScreenInfo'
 
@@ -16,7 +16,7 @@ export default function TabTwoScreen() {
     <SafeAreaView className={`flex-1`} style={{ backgroundColor: bgColor }}>
       <View className="flex-1 items-center justify-center ">
         <H1 className="text-center">Tab Two</H1>
-        <View className={`my-4 h-[2px] w-10/12 bg-slate-100/75`} />
+        <View className={`my-4 h-[2px] w-10/12 bg-red-100/75`} />
         <EditScreenInfo path="app/(tabs)/two.tsx" />
       </View>
     </SafeAreaView>

@@ -1,22 +1,22 @@
 {
-  "extends": "@mj/tsconfig/nextjs.json",
+  "extends": "@mj/tsconfig/base.json",
   "compilerOptions": {
     "strictNullChecks": true,
     "noUncheckedIndexedAccess": true,
     "baseUrl": ".",
     "rootDir": ".",
-    "allowJs": true
-    // "paths": {
-    //   "@/*": ["./*"]
-    // }
+    "jsx": "react-native",
+    "types": ["nativewind/types"],
+    "tsBuildInfoFile": "node_modules/.cache/tsbuildinfo.json"
   },
-  "types": ["nativewind/types"],
   "include": [
     "./**/*.ts",
     "./**/*.tsx",
+    "design/tailwind/theme.js",
     "./*.ts",
-    "utils/tailwind/*.js",
-    ".eslintrc.js"
+    "utils/tailwind/colors.js",
+    "utils/tailwind/utils.js",
+    "tailwind.config.ts"
   ],
   "exclude": ["node_modules"]
 }

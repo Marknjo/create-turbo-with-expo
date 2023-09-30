@@ -1,6 +1,6 @@
 /** @type {import("eslint").Linter.Config} */
 module.exports = {
-  ...require('@mj/eslint/eslint-storybook.js'),
+  exports: ['@mj/eslint/eslint-storybook'],
   extends: ['plugin:storybook/recommended'],
   root: true,
   parserOptions: {

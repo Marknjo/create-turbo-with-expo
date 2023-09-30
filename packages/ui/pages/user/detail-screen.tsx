@@ -7,7 +7,6 @@ import { TextLink } from 'solito/link'
 export function UserDetailScreen() {
   const param = useParams<{ id: string }>()
 
-
   return (
     <View className="flex-1 items-center justify-center">
       <Text className="mb-4 text-center font-bold">{`User ID: ${param.id}`}</Text>

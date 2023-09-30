@@ -20,7 +20,7 @@ export function HomeScreen() {
         Welcome to Turborepo Starter Repo For Expo apps (React Native),
         Storybook, NextJS, Solito & NestJs as API
       </H1>
-      <View className="max-w-xl justify-center" as="article">
+      <View className="max-w-xl justify-center mx-auto" as="article">
         <Text className="text-center">
           Here is a basic starter to show you how you can navigate from one
           screen to another. This screen uses the same code on Next.js and React
@@ -73,7 +73,7 @@ export function HomeScreen() {
         >
           Regular Link
         </TextLink>
-        <Button type="button">Button</Button>
+        <Button type="button" size='lg'>Just a Button</Button>
       </Row>
 
       {/* Mobile only  */}

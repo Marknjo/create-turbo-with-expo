@@ -1,5 +1,5 @@
 module.exports = {
-  ...require('@mj/eslint/eslint-api.js'),
+  exports: ['@mj/eslint/eslint-api'],
   root: true,
   parserOptions: {
     project: 'tsconfig.json',

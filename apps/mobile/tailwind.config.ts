@@ -2,8 +2,6 @@ import type { Config } from 'tailwindcss'
 
 import baseConfig from '@mj/tailwind'
 
-const { theme } = require('@mj/ui/utils/tailwind/theme')
-
 export default {
   content: [
     './src/**/*.{ts,tsx}',
@@ -12,8 +10,11 @@ export default {
     '../../packages/ui/components/**/*.{ts,tsx}',
     '../../packages/ui/providers/**/*.{ts,tsx}',
   ],
-  theme: {
-    ...theme,
-  },
   presets: [baseConfig],
+  plugins: [
+    require('tailwind-scrollbar')({ nocompatible: true }),
+    require('@tailwindcss/forms')({
+      strategy: 'class', // only generate classes
+    }),
+  ]
 } satisfies Config

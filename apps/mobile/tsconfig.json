@@ -1,5 +1,5 @@
 {
-  "extends": "@mj/tsconfig/react-native.json",
+  "extends": "@mj/tsconfig/base.json",
   "compilerOptions": {
     "baseUrl": ".",
     "paths": {
@@ -24,9 +24,7 @@
     "index.tsx",
     "*.js",
     ".expo/types/**/*.ts",
-    "expo-env.d.ts",
-    ".eslintrc.js",
-    "./expo-plugins/with-modify-gradle.js"
+    "expo-env.d.ts"
   ],
   "exclude": ["node_modules", "*.config.js"]
 }

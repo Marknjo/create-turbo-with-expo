@@ -1,12 +1,15 @@
 {
-  "extends": "@mj/tsconfig/react.json",
+  "extends": "@mj/tsconfig/base.json",
   "compilerOptions": {
     /* Paths */
-    // "baseUrl": ".",
+    "baseUrl": ".",
     "rootDir": ".",
     "paths": {
       "@comps/*": ["./components/*"]
-    }
+    },
+    "jsx": "react",
+    "types": ["nativewind/types"],
+    "tsBuildInfoFile": "node_modules/.cache/tsbuildinfo.json"
   },
   "include": [
     "./**/*.ts",
@@ -15,8 +18,7 @@
     "./**/*.mdx",
     "../ui/components/Buttons/MyButtons.tsx",
     "postcss.config.mjs",
-    "types/images.d.ts",
-    ".eslintrc.js"
+    "types/images.d.ts"
   ],
   "exclude": ["node_modules"]
 }

@@ -17,7 +17,6 @@ export default function TabLayout() {
   const colorScheme = useColorScheme()
 
   return (
-    // <SafeAreaView style={{ flex: 1 }}>
     <Tabs
       screenOptions={{
         tabBarActiveTintColor: Colors[colorScheme ?? 'light'].tint,
@@ -62,7 +61,7 @@ export default function TabLayout() {
       <Tabs.Screen
         name="users"
         options={{
-          title: 'Users',
+          href: '/users',
           tabBarIcon: ({ color }) => <TabBarIcon name="user" color={color} />,
         }}
       />

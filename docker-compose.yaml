@@ -2,31 +2,38 @@ services:
   db:
     image: mongo
     restart: always
-    container_name: cnt-mongo-db
+    container_name: pesasync-db
     ports:
       - 27017:27017
     env_file:
       - ./.env.local
     volumes:
-      - db-data:/data/db
+      - pesasync-data:/data/db
 
   db-test:
     image: mongo
     restart: always
-    container_name: cnt-test-db
+    container_name: pesasync-test-db
     ports:
       - 27018:27017
     env_file:
       - ./.env.test.local
 
+  redis:
+    image: redis
+    restart: always
+    container_name: pesasync-redis
+    ports:
+      - 6379:6379
+
   admin:
     image: mongo-express
     restart: always
-    container_name: cnt-mongo-admin
+    container_name: pesasync-admin
     ports:
       - 8081:8081
     env_file:
       - ./.env.local
 
 volumes:
-  db-data:
+  pesasync-data:

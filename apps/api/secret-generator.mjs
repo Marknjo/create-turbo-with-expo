@@ -1,7 +1,7 @@
 import { randomBytes } from 'node:crypto'
 import { argv } from 'node:process'
 
-const len = argv.at(-1)?.split('=').at(-1)
+const len = argv.at(-1).split('=').at(-1)
 
 console.log('Copy Generated ⚙️⚙️⚙️ Password: \n')
 

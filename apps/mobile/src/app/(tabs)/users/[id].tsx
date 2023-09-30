@@ -10,6 +10,10 @@ import Colors from '@constants/Colors'
 export default function UserScreen() {
   const params = useLocalSearchParams<{ id: string }>()
 
+
+  const userName =
+    params?.id.slice(0, 1).toLocaleUpperCase() + params?.id.slice(1)
+
   const colorScheme = useColorScheme()
   return (
     <SafeAreaView
@@ -20,11 +24,12 @@ export default function UserScreen() {
     >
       <Stack.Screen
         options={{
-          title: params?.id || 'User',
+          title: userName || 'User',
+          headerShown: true,
         }}
       />
 
-      <H1 className="text-center">Users Screen</H1>
+      <H1 className="text-center px-8">Users Screen</H1>
       <UserDetailScreen />
       <StatusBar style={Platform.OS === 'ios' ? 'light' : 'auto'} />
     </SafeAreaView>

@@ -16,9 +16,9 @@ module.exports = {
     },
     ecmaVersion: 12,
     sourceType: 'module',
-    project: 'tsconfig.json',
+    project: 'tsconfig.eslint.json',
   },
-  plugins: ['react', '@typescript-eslint', 'import', 'prettier'],
+  plugins: ['react', '@typescript-eslint', 'import'],
   settings: {
     react: {
       version: 'detect',

@@ -1,5 +1,5 @@
 import Colors from '@constants/Colors'
-import { H1, Text } from '@mj/ui/components/Typography'
+import { H1 } from '@mj/ui/components/Typography'
 import { View } from '@mj/ui/components/Layouts'
 import { Stack, useLocalSearchParams } from 'expo-router'
 import { useColorScheme } from 'react-native'
@@ -29,9 +29,10 @@ export default function TeamScreen() {
       <Stack.Screen
         options={{
           title: prettyName,
+          headerShown: true,
         }}
       />
-      <View className="flex-1 items-center justify-center">
+      <View className="flex-1 items-center justify-center px-4">
         <H1>Team Name: {prettyName}</H1>
       </View>
     </SafeAreaView>

@@ -1,9 +1,10 @@
 // import 'raf/polyfill'
 import { Inter } from 'next/font/google'
 
-import './globals.css'
+import { Provider } from '@mj/ui/providers'
 
-import { Providers } from './providers'
+import '@mj/tailwind/globals.css'
+
 import { StylesProvider } from './styles-provider'
 
 const inter = Inter({ subsets: ['latin'] })
@@ -19,11 +20,11 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
-      <body className={inter.className}>
-        <Providers>
+    <html lang="en" >
+      <body className={`${inter.className} scrollbar-thin scrollbar-thumb-amber-900 scrollbar-track-amber-100`}>
+        <Provider>
           <StylesProvider>{children}</StylesProvider>
-        </Providers>
+        </Provider>
       </body>
     </html>
   )

@@ -1,8 +1,8 @@
 import type { Preview } from '@storybook/react'
 import { INITIAL_VIEWPORTS } from '@storybook/addon-viewport'
-import { breakPoints } from '@mj/ui/utils'
+import { breakPoints } from '@mj/tailwind/utils'
 
-import '../tailwind.css'
+import '@mj/tailwind/storybooks.css'
 import { globalDecorators } from './decorators'
 
 // Create custom viewports using widths defined in design tokens

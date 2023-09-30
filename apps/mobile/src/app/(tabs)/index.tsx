@@ -1,5 +1,4 @@
-import { StyleSheet, useColorScheme } from 'react-native'
-import { SafeAreaView } from 'react-native-safe-area-context'
+import { StyleSheet, useColorScheme, ScrollView } from 'react-native'
 
 import { HomeScreen } from '@mj/ui/pages/home'
 import Colors from '@constants/Colors'
@@ -7,14 +6,12 @@ import Colors from '@constants/Colors'
 export default function TabOneScreen() {
   const colorScheme = useColorScheme()
   return (
-    <SafeAreaView
-      style={[
+    <ScrollView style={[
         styles.wrapper,
         { backgroundColor: Colors[colorScheme ?? 'light'].background },
-      ]}
-    >
+      ]}>
       <HomeScreen />
-    </SafeAreaView>
+    </ScrollView>
   )
 }
 
