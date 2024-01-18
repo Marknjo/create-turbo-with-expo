@@ -415,14 +415,14 @@ importers:
   configs/prettier:
     dependencies:
       '@ianvs/prettier-plugin-sort-imports':
-        specifier: ^4.1.0
-        version: 4.1.0(prettier@3.2.4)
+        specifier: ^4.1.1
+        version: 4.1.1(prettier@3.2.4)
       prettier:
         specifier: ^3.2.4
         version: 3.2.4
       prettier-plugin-tailwindcss:
         specifier: ^0.5.11
-        version: 0.5.11(@ianvs/prettier-plugin-sort-imports@4.1.0)(prettier@3.2.4)
+        version: 0.5.11(@ianvs/prettier-plugin-sort-imports@4.1.1)(prettier@3.2.4)
     devDependencies:
       '@mj/tsconfig':
         specifier: ^0.1.0
@@ -5353,8 +5353,8 @@ packages:
   /@humanwhocodes/object-schema@2.0.2:
     resolution: {integrity: sha512-6EwiSjwWYP7pTckG6I5eyFANjPhmPjUX9JRLUSfNPC7FX7zK9gyZAfUEaECL6ALTpGX5AjnBq3C9XmVWPitNpw==}
 
-  /@ianvs/prettier-plugin-sort-imports@4.1.0(prettier@3.2.4):
-    resolution: {integrity: sha512-IAXeTLU24k6mRPa6mFbW1qZJ/j0m3OeH44wyijWyr+YqqdNtBnfHxAntOAATS9iDfrT01NesKGsdzqnXdDQa/A==}
+  /@ianvs/prettier-plugin-sort-imports@4.1.1(prettier@3.2.4):
+    resolution: {integrity: sha512-kJhXq63ngpTQ2dxgf5GasbPJWsJA3LgoOdd7WGhpUSzLgLgI4IsIzYkbJf9kmpOHe7Vdm/o3PcRA3jmizXUuAQ==}
     peerDependencies:
       '@vue/compiler-sfc': '>=3.0.0'
       prettier: 2 || 3
@@ -5362,11 +5362,11 @@ packages:
       '@vue/compiler-sfc':
         optional: true
     dependencies:
-      '@babel/core': 7.23.0
-      '@babel/generator': 7.23.0
-      '@babel/parser': 7.23.0
-      '@babel/traverse': 7.23.0
-      '@babel/types': 7.23.0
+      '@babel/core': 7.23.7
+      '@babel/generator': 7.23.6
+      '@babel/parser': 7.23.6
+      '@babel/traverse': 7.23.7
+      '@babel/types': 7.23.6
       prettier: 3.2.4
       semver: 7.5.4
     transitivePeerDependencies:
@@ -5902,7 +5902,7 @@ packages:
     resolution: {integrity: sha512-UTYAUj/wviwdsMfzoSJspJxbkH5o1snzwX0//0ENX1u/55kkZZkcTZP6u9bwKGkv+dkk9at4m1Cpt0uY80kcpQ==}
     dependencies:
       '@jridgewell/gen-mapping': 0.3.3
-      '@jridgewell/trace-mapping': 0.3.21
+      '@jridgewell/trace-mapping': 0.3.19
 
   /@jridgewell/sourcemap-codec@1.4.15:
     resolution: {integrity: sha512-eF2rxCRulEKXHTRiDrDy6erMYWqNw4LPdQ8UQA4huuxaQsVeRPFl2oM8oDGxMFhJUWZf9McpLtJasDDZb/Bpeg==}
@@ -11092,7 +11092,7 @@ packages:
     engines: {node: ^14.15.0 || ^16.10.0 || >=18.0.0}
     dependencies:
       '@babel/template': 7.22.15
-      '@babel/types': 7.23.0
+      '@babel/types': 7.23.6
       '@types/babel__core': 7.20.2
       '@types/babel__traverse': 7.20.2
     dev: true
@@ -11377,7 +11377,6 @@ packages:
       '@babel/plugin-transform-spread': 7.22.5(@babel/core@7.23.7)
       '@babel/plugin-transform-template-literals': 7.22.5(@babel/core@7.23.7)
       babel-plugin-syntax-trailing-function-commas: 7.0.0-beta.0
-    dev: true
 
   /babel-preset-jest@28.1.3(@babel/core@7.23.0):
     resolution: {integrity: sha512-L+fupJvlWAHbQfn74coNX3zf60LXMJsezNvvx8eIh7iOR1luJ1poxYgQk1F8PYtNq/6QODDHCqsSnTFSWC491A==}
@@ -18466,10 +18465,10 @@ packages:
     resolution: {integrity: sha512-PlkGTQNqS51Bx4vuufSQCdSn2R2rt7korzngo+b5GCkeX5pjinPjnO2kNhQ8l+5bO0iUD/WZ9nsM2PGGKIkWFA==}
     engines: {node: '>=16'}
     dependencies:
-      '@babel/core': 7.23.0
-      '@babel/generator': 7.23.0
+      '@babel/core': 7.23.7
+      '@babel/generator': 7.23.6
       '@babel/template': 7.22.15
-      '@babel/traverse': 7.23.0
+      '@babel/traverse': 7.23.7
       nullthrows: 1.1.1
     transitivePeerDependencies:
       - supports-color
@@ -18490,11 +18489,11 @@ packages:
     resolution: {integrity: sha512-mE1fxVAnJKmwwJyDtThildxxos9+DGs9+vTrx2ktSFMEVTtXS/bIv2W6hux1pqivqAfyJpTeACXHk5u2DgGvIQ==}
     engines: {node: '>=16'}
     dependencies:
-      '@babel/core': 7.23.0
-      '@babel/generator': 7.23.0
-      '@babel/parser': 7.23.0
-      '@babel/types': 7.23.0
-      babel-preset-fbjs: 3.4.0(@babel/core@7.23.0)
+      '@babel/core': 7.23.7
+      '@babel/generator': 7.23.6
+      '@babel/parser': 7.23.6
+      '@babel/types': 7.23.6
+      babel-preset-fbjs: 3.4.0(@babel/core@7.23.7)
       metro: 0.76.8
       metro-babel-transformer: 0.76.8
       metro-cache: 0.76.8
@@ -18536,11 +18535,11 @@ packages:
     dependencies:
       '@babel/code-frame': 7.22.13
       '@babel/core': 7.23.0
-      '@babel/generator': 7.23.0
-      '@babel/parser': 7.23.0
+      '@babel/generator': 7.23.6
+      '@babel/parser': 7.23.6
       '@babel/template': 7.22.15
-      '@babel/traverse': 7.23.0
-      '@babel/types': 7.23.0
+      '@babel/traverse': 7.23.7
+      '@babel/types': 7.23.6
       accepts: 1.3.8
       async: 3.2.4
       chalk: 4.1.2
@@ -20126,7 +20125,7 @@ packages:
       fast-diff: 1.3.0
     dev: false
 
-  /prettier-plugin-tailwindcss@0.5.11(@ianvs/prettier-plugin-sort-imports@4.1.0)(prettier@3.2.4):
+  /prettier-plugin-tailwindcss@0.5.11(@ianvs/prettier-plugin-sort-imports@4.1.1)(prettier@3.2.4):
     resolution: {integrity: sha512-AvI/DNyMctyyxGOjyePgi/gqj5hJYClZ1avtQvLlqMT3uDZkRbi4HhGUpok3DRzv9z7Lti85Kdj3s3/1CeNI0w==}
     engines: {node: '>=14.21.3'}
     peerDependencies:
@@ -20175,7 +20174,7 @@ packages:
       prettier-plugin-twig-melody:
         optional: true
     dependencies:
-      '@ianvs/prettier-plugin-sort-imports': 4.1.0(prettier@3.2.4)
+      '@ianvs/prettier-plugin-sort-imports': 4.1.1(prettier@3.2.4)
       prettier: 3.2.4
     dev: false
 
