@@ -16,7 +16,7 @@
   "dependencies": {
     "@mj/tailwind": "^0.1.1",
     "@mj/tsconfig": "^0.1.0",
-    "@mj/ui": "^0.1.0",
+    "@mj/ui": "^0.1.1",
     "@phosphor-icons/react": "^2.0.15",
     "class-variance-authority": "^0.7.0",
     "react": "^18.2.0",

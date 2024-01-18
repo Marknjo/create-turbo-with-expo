@@ -160,7 +160,7 @@ importers:
         specifier: ^13.0.0
         version: 13.0.0
       '@mj/ui':
-        specifier: ^0.1.0
+        specifier: ^0.1.1
         version: link:../../packages/ui
       '@react-native-community/netinfo':
         specifier: ^9.3.10
@@ -287,7 +287,7 @@ importers:
         specifier: ^0.1.0
         version: link:../mobile
       '@mj/ui':
-        specifier: ^0.1.0
+        specifier: ^0.1.1
         version: link:../../packages/ui
       '@t3-oss/env-nextjs':
         specifier: ^0.6.1
@@ -493,7 +493,7 @@ importers:
         specifier: ^0.1.0
         version: link:../../configs/tsconfig
       '@mj/ui':
-        specifier: ^0.1.0
+        specifier: ^0.1.1
         version: link:../ui
       '@phosphor-icons/react':
         specifier: ^2.0.15
