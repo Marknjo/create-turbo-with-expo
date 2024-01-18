@@ -24,7 +24,7 @@
     "upgrade": "^1.1.0"
   },
   "devDependencies": {
-    "@mj/eslint": "^0.1.0",
+    "@mj/eslint": "^0.1.1",
     "@mj/prettier": "^0.1.1",
     "@storybook/addon-a11y": "^7.4.5",
     "@storybook/addon-actions": "^7.4.5",

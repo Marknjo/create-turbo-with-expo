@@ -12,7 +12,7 @@ importers:
         specifier: ^0.21.2
         version: 0.21.2
       '@mj/eslint':
-        specifier: ^0.1.0
+        specifier: ^0.1.1
         version: link:configs/eslint
       '@mj/prettier':
         specifier: ^0.1.1
@@ -94,7 +94,7 @@ importers:
         version: 7.8.1
     devDependencies:
       '@mj/eslint':
-        specifier: ^0.1.0
+        specifier: ^0.1.1
         version: link:../../configs/eslint
       '@mj/prettier':
         specifier: ^0.1.1
@@ -242,7 +242,7 @@ importers:
         specifier: ^7.2.5
         version: 7.2.5
       '@mj/eslint':
-        specifier: ^0.1.0
+        specifier: ^0.1.1
         version: link:../../configs/eslint
       '@mj/prettier':
         specifier: ^0.1.1
@@ -312,7 +312,7 @@ importers:
         version: 3.22.2
     devDependencies:
       '@mj/eslint':
-        specifier: ^0.1.0
+        specifier: ^0.1.1
         version: link:../../configs/eslint
       '@mj/prettier':
         specifier: ^0.1.1
@@ -434,7 +434,7 @@ importers:
   configs/tailwind:
     devDependencies:
       '@mj/eslint':
-        specifier: ^0.1.0
+        specifier: ^0.1.1
         version: link:../eslint
       '@mj/prettier':
         specifier: ^0.1.1
@@ -512,7 +512,7 @@ importers:
         version: 1.1.0
     devDependencies:
       '@mj/eslint':
-        specifier: ^0.1.0
+        specifier: ^0.1.1
         version: link:../../configs/eslint
       '@mj/prettier':
         specifier: ^0.1.1
@@ -654,7 +654,7 @@ importers:
         version: 1.14.0
     devDependencies:
       '@mj/eslint':
-        specifier: ^0.1.0
+        specifier: ^0.1.1
         version: link:../../configs/eslint
       '@mj/prettier':
         specifier: ^0.1.1

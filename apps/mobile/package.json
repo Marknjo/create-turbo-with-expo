@@ -52,7 +52,7 @@
     "@babel/preset-env": "^7.22.20",
     "@babel/runtime": "^7.23.1",
     "@expo/config-plugins": "^7.2.5",
-    "@mj/eslint": "^0.1.0",
+    "@mj/eslint": "^0.1.1",
     "@mj/prettier": "^0.1.1",
     "@mj/tailwind": "^0.1.1",
     "@mj/tsconfig": "^0.1.0",

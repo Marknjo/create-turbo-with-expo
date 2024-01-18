@@ -27,7 +27,7 @@
     "zod": "^3.22.2"
   },
   "devDependencies": {
-    "@mj/eslint": "^0.1.0",
+    "@mj/eslint": "^0.1.1",
     "@mj/prettier": "^0.1.1",
     "@mj/tailwind": "^0.1.1",
     "@mj/tsconfig": "^0.1.0",

@@ -32,7 +32,7 @@
   },
   "devDependencies": {
     "@manypkg/cli": "^0.21.2",
-    "@mj/eslint": "^0.1.0",
+    "@mj/eslint": "^0.1.1",
     "@mj/prettier": "^0.1.1",
     "@turbo/gen": "^1.11.3",
     "lint-staged": "^15.2.0",
