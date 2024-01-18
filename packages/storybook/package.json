@@ -14,7 +14,7 @@
   },
   "prettier": "@mj/prettier",
   "dependencies": {
-    "@mj/tailwind": "^0.1.0",
+    "@mj/tailwind": "^0.1.1",
     "@mj/tsconfig": "^0.1.0",
     "@mj/ui": "^0.1.0",
     "@phosphor-icons/react": "^2.0.13",
