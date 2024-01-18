@@ -12,7 +12,7 @@
     "eslint-api.js"
   ],
   "dependencies": {
-    "@next/eslint-plugin-next": "^13.5.3",
+    "@next/eslint-plugin-next": "^14.0.4",
     "@types/eslint": "^8.56.2",
     "@typescript-eslint/eslint-plugin": "6.19.0",
     "@typescript-eslint/parser": "^6.19.0",
