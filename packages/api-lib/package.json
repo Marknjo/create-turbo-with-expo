@@ -1,6 +1,6 @@
 {
-  "name": "@mj/lib",
-  "version": "0.1.0",
+  "name": "@mj/api-lib",
+  "version": "0.1.1",
   "private": true,
   "scripts": {},
   "devDependencies": {
