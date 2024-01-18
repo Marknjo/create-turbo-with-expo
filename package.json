@@ -35,7 +35,7 @@
     "@mj/eslint": "^0.1.0",
     "@mj/prettier": "^0.1.0",
     "@turbo/gen": "^1.11.3",
-    "lint-staged": "^13.2.3",
+    "lint-staged": "^15.2.0",
     "msw": "^2.1.2",
     "prettier": "^3.2.4",
     "turbo": "latest",
