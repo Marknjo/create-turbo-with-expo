@@ -31,7 +31,7 @@
     ]
   },
   "devDependencies": {
-    "@manypkg/cli": "^0.21.0",
+    "@manypkg/cli": "^0.21.2",
     "@mj/eslint": "^0.1.0",
     "@mj/prettier": "^0.1.0",
     "@turbo/gen": "^1.11.3",
