@@ -23,7 +23,6 @@
     ],
     "root": true
   },
-  "dependencies": {},
   "devDependencies": {
     "@mj/eslint": "^0.1.0",
     "@mj/prettier": "^0.1.0",
@@ -34,6 +33,6 @@
     "postcss": "8.4.31",
     "tailwind-scrollbar": "^3.0.5",
     "tailwindcss": "3.3.2",
-    "typescript": "^5.2.2"
+    "typescript": "^5.3.3"
   }
 }
