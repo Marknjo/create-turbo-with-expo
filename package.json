@@ -34,7 +34,7 @@
     "@manypkg/cli": "^0.21.0",
     "@mj/eslint": "^0.1.0",
     "@mj/prettier": "^0.1.0",
-    "@turbo/gen": "^1.10.14",
+    "@turbo/gen": "^1.11.3",
     "lint-staged": "^13.2.3",
     "msw": "^2.1.2",
     "prettier": "^3.0.3",
