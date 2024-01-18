@@ -45,7 +45,7 @@
   },
   "devDependencies": {
     "@mj/eslint": "^0.1.0",
-    "@mj/prettier": "^0.1.0",
+    "@mj/prettier": "^0.1.1",
     "@mj/tsconfig": "^0.1.0",
     "@nestjs/cli": "^10.1.18",
     "@nestjs/schematics": "^10.0.2",

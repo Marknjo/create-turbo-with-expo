@@ -15,7 +15,7 @@ importers:
         specifier: ^0.1.0
         version: link:configs/eslint
       '@mj/prettier':
-        specifier: ^0.1.0
+        specifier: ^0.1.1
         version: link:configs/prettier
       '@turbo/gen':
         specifier: ^1.11.3
@@ -97,7 +97,7 @@ importers:
         specifier: ^0.1.0
         version: link:../../configs/eslint
       '@mj/prettier':
-        specifier: ^0.1.0
+        specifier: ^0.1.1
         version: link:../../configs/prettier
       '@mj/tsconfig':
         specifier: ^0.1.0
@@ -245,7 +245,7 @@ importers:
         specifier: ^0.1.0
         version: link:../../configs/eslint
       '@mj/prettier':
-        specifier: ^0.1.0
+        specifier: ^0.1.1
         version: link:../../configs/prettier
       '@mj/tailwind':
         specifier: ^0.1.1
@@ -315,7 +315,7 @@ importers:
         specifier: ^0.1.0
         version: link:../../configs/eslint
       '@mj/prettier':
-        specifier: ^0.1.0
+        specifier: ^0.1.1
         version: link:../../configs/prettier
       '@mj/tailwind':
         specifier: ^0.1.1
@@ -437,7 +437,7 @@ importers:
         specifier: ^0.1.0
         version: link:../eslint
       '@mj/prettier':
-        specifier: ^0.1.0
+        specifier: ^0.1.1
         version: link:../prettier
       '@mj/tsconfig':
         specifier: ^0.1.0
@@ -515,7 +515,7 @@ importers:
         specifier: ^0.1.0
         version: link:../../configs/eslint
       '@mj/prettier':
-        specifier: ^0.1.0
+        specifier: ^0.1.1
         version: link:../../configs/prettier
       '@storybook/addon-a11y':
         specifier: ^7.4.5
@@ -657,7 +657,7 @@ importers:
         specifier: ^0.1.0
         version: link:../../configs/eslint
       '@mj/prettier':
-        specifier: ^0.1.0
+        specifier: ^0.1.1
         version: link:../../configs/prettier
       '@mj/tailwind':
         specifier: ^0.1.1
