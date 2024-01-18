@@ -50,7 +50,7 @@
     "@types/react-native": "^0.72.3",
     "@vitejs/plugin-react": "^4.1.0",
     "babel-plugin-react-native-web": "^0.19.9",
-    "eslint": "^8.50.0",
+    "eslint": "^8.56.0",
     "eslint-plugin-storybook": "^0.6.14",
     "metro-react-native-babel-preset": "^0.77.0",
     "postcss": "^8.4.31",

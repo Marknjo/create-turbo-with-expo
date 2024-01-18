@@ -7,7 +7,7 @@
     "@mj/api": "^0.1.0",
     "@mj/tsconfig": "^0.1.0",
     "@types/node": "^20.4.7",
-    "eslint": "^8.46.0",
+    "eslint": "^8.56.0",
     "typescript": "^5.3.3"
   }
 }
