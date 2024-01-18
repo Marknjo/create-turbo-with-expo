@@ -9,20 +9,20 @@
   "dependencies": {
     "@radix-ui/react-slot": "^1.0.2",
     "class-variance-authority": "^0.7.0",
-    "clsx": "^2.0.0",
-    "expo-linking": "~5.0.2",
-    "moti": "^0.26.0",
+    "clsx": "^2.1.0",
+    "expo-linking": "~6.0.0",
+    "moti": "^0.27.2",
     "nativewind": "^2.0.11",
-    "solito": "^4.0.1",
-    "tailwind-merge": "^1.14.0"
+    "solito": "^4.2.0",
+    "tailwind-merge": "^2.2.0"
   },
   "devDependencies": {
     "@mj/eslint": "^0.1.1",
     "@mj/prettier": "^0.1.1",
     "@mj/tailwind": "^0.1.1",
     "@mj/tsconfig": "^0.1.0",
-    "@types/react": "^18.2.23",
-    "@types/react-dom": "^18.2.8",
+    "@types/react": "^18.2.48",
+    "@types/react-dom": "^18.2.18",
     "eslint": "^8.56.0",
     "react": "^18.2.0"
   }
