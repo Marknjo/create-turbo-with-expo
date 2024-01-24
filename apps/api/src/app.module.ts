@@ -1,10 +1,12 @@
 import { env } from 'process'
 import { Module } from '@nestjs/common'
+import { ConfigModule } from '@nestjs/config'
+
 import { AppController } from './app.controller'
 import { AppService } from './app.service'
-import { ConfigModule } from '@nestjs/config'
-import validationSchema from './common/utils/envs.config'
 import appConfig from './common/utils/app.config'
+import validationSchema from './common/utils/envs.config'
+
 // import { MongooseModule } from '@nestjs/mongoose'
 
 @Module({

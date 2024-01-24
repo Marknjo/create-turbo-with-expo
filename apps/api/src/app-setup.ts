@@ -1,12 +1,13 @@
 import { env } from 'process'
-// import { randomBytes } from 'node:crypto'
-import { SwaggerModule, DocumentBuilder } from '@nestjs/swagger'
 import {
   INestApplication,
   Logger,
   ValidationPipe,
   VersioningType,
 } from '@nestjs/common'
+// import { randomBytes } from 'node:crypto'
+import { DocumentBuilder, SwaggerModule } from '@nestjs/swagger'
+
 import { ResponseWrapperInterceptor } from './common/interceptors/response-wrapper.interceptor'
 
 export async function setup(app: INestApplication) {

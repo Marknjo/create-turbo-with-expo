@@ -4,7 +4,7 @@ import {
   Injectable,
   NestInterceptor,
 } from '@nestjs/common'
-import { Observable, map } from 'rxjs'
+import { map, Observable } from 'rxjs'
 
 @Injectable()
 export class ResponseWrapperInterceptor implements NestInterceptor {
@@ -15,8 +15,8 @@ export class ResponseWrapperInterceptor implements NestInterceptor {
         ...(data?.results
           ? { results: data.results }
           : Array.isArray(data)
-          ? { results: data.length }
-          : { results: 1 }),
+            ? { results: data.length }
+            : { results: 1 }),
         ...(data?.accessToken ? { accessToken: data.accessToken } : {}),
         ...(data?.refreshToken ? { refreshToken: data.accessToken } : {}),
         message: data?.message ? data.message : 'Request Successful',

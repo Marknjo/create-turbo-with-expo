@@ -1,5 +1,5 @@
-import { registerAs } from '@nestjs/config'
 import { env } from 'process'
+import { registerAs } from '@nestjs/config'
 
 export default registerAs('app', () => ({
   isDev: env.NODE_ENV === 'development',
