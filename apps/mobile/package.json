@@ -1,68 +1,68 @@
 {
   "name": "@mj/mobile",
-  "version": "0.1.0",
   "private": true,
-  "main": "index.tsx",
+  "main": "expo-router/entry",
+  "version": "0.1.0",
   "scripts": {
-    "clean": "git clean -xdf .expo .turbo node_modules",
+    "start": "expo start",
     "dev": "expo start --android",
-    "dev:android": "expo start --android",
     "dev:ios": "expo start --ios",
+    "web": "expo start --web",
     "lint": "eslint .",
+    "clean": "git clean -xdf .expo .turbo node_modules",
     "lint:fix": "pnpm lint --fix",
-    "type-check": "tsc --noEmit"
+    "type-check": "tsc --noEmit",
+    "test": "jest --watchAll"
   },
-  "prettier": "@mj/prettier",
+  "jest": {
+    "preset": "jest-expo"
+  },
+  "dependencies": {
+    "@expo/vector-icons": "^14.0.0",
+    "@react-native-community/netinfo": "^11.2.0",
+    "@react-navigation/native": "^6.0.2",
+    "@shopify/flash-list": "^1.4.3",
+    "@tanstack/react-query": "^5.17.19",
+    "expo": "~50.0.1",
+    "expo-font": "~11.10.2",
+    "expo-linking": "~6.2.2",
+    "expo-router": "~3.4.3",
+    "expo-splash-screen": "~0.26.3",
+    "expo-status-bar": "~1.11.1",
+    "expo-system-ui": "~2.9.3",
+    "expo-web-browser": "~12.8.1",
+    "nativewind": "^4.0.1",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-native": "0.73.2",
+    "react-native-gesture-handler": "^2.12.0",
+    "react-native-reanimated": "^3.6.0",
+    "react-native-safe-area-context": "4.8.2",
+    "react-native-screens": "~3.29.0",
+    "react-native-web": "~0.19.6",
+    "superjson": "2.2.1",
+    "tailwindcss": "^3.4.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.20.0",
+    "@mj/eslint": "^0.1.1",
+    "@mj/prettier": "^0.1.1",
+    "@mj/tailwind": "^0.1.1",
+    "@mj/tsconfig": "^0.1.1",
+    "@types/react": "^18.2.48",
+    "jest": "^29.7.0",
+    "jest-expo": "~50.0.1",
+    "react-test-renderer": "18.2.0",
+    "typescript": "^5.3.3"
+  },
   "eslintConfig": {
+    "root": true,
     "extends": [
       "@mj/eslint/base",
       "@mj/eslint/react"
     ],
-    "root": true
-  },
-  "dependencies": {
-    "@expo/metro-config": "^0.10.6",
-    "@expo/vector-icons": "^13.0.0",
-    "@mj/ui": "^0.1.1",
-    "@react-native-community/netinfo": "^9.3.10",
-    "@react-navigation/native": "^6.1.8",
-    "@shopify/flash-list": "^1.4.3",
-    "@tanstack/react-query": "5.0.0-rc.1",
-    "@tanstack/react-query-devtools": "5.0.0-rc.1",
-    "expo": "^49.0.13",
-    "expo-constants": "~14.4.2",
-    "expo-font": "^11.4.0",
-    "expo-linking": "~6.0.0",
-    "expo-router": "^2.0.8",
-    "expo-splash-screen": "~0.20.5",
-    "expo-status-bar": "~1.6.0",
-    "expo-web-browser": "^12.3.2",
-    "nativewind": "^2.0.11",
-    "react": "18.2.0",
-    "react-dom": "18.2.0",
-    "react-native": "0.72.5",
-    "react-native-reanimated": "^3.3.0",
-    "react-native-safe-area-context": "4.6.3",
-    "react-native-screens": "~3.22.0",
-    "react-native-web": "^0.19.9",
-    "superjson": "1.13.3"
-  },
-  "devDependencies": {
-    "@babel/core": "^7.23.0",
-    "@babel/preset-env": "^7.22.20",
-    "@babel/runtime": "^7.23.1",
-    "@expo/config-plugins": "^7.2.5",
-    "@mj/eslint": "^0.1.1",
-    "@mj/prettier": "^0.1.1",
-    "@mj/tailwind": "^0.1.1",
-    "@mj/tsconfig": "^0.1.0",
-    "@tailwindcss/forms": "^0.5.7",
-    "@types/react": "^18.2.48",
-    "autoprefixer": "^10.4.17",
-    "eslint": "^8.56.0",
-    "postcss": "^8.4.33",
-    "tailwind-scrollbar": "^3.0.5",
-    "tailwindcss": "^3.4.1",
-    "typescript": "^5.3.3"
+    "ignorePatterns": [
+      "expo-plugins/**"
+    ]
   }
 }
