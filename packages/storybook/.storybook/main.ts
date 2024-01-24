@@ -1,6 +1,5 @@
+import { dirname, join, resolve } from 'path'
 import type { StorybookConfig } from '@storybook/react-vite'
-
-import { join, dirname, resolve } from 'path'
 
 /**
  * @NOTE: Using absolute path is causing problems with fs,
@@ -47,7 +46,6 @@ const config: StorybookConfig = {
     '@storybook/addon-styling',
     '@storybook/addon-onboarding',
     '@storybook/addon-interactions',
-    '@storybook/addon-react-native-web',
     '@storybook/addon-designs',
     '@storybook/addon-coverage',
   ],
@@ -71,10 +69,6 @@ const config: StorybookConfig = {
       },
       resolve: {
         alias: [
-          {
-            find: '@mj/ui',
-            replacement: resolve(__dirname, '../../ui/'),
-          },
           {
             find: '@comps',
             replacement: resolve(__dirname, '../components'),

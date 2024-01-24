@@ -1,22 +1,23 @@
 import type { Config } from 'tailwindcss'
+import { fontFamily } from 'tailwindcss/defaultTheme'
+
 import baseConfig from '@mj/tailwind'
 
 export default {
+  // We need to append the path to the UI package to the content array so that
+  // those classes are included correctly.
   content: [
-    './stories/**/*.{js,ts,jsx,tsx,mdx}',
-    './components/**/*.{js,ts,jsx,tsx,mdx}',
-    '../ui/pages/**/*.{js,ts,jsx,tsx}',
-    '../ui/components/**/*.{js,ts,jsx,tsx}',
-    '../ui/providers/**/*.{js,ts,jsx,tsx}',
+    ...baseConfig.content,
+    '../../packages/ui/**/*.{ts,tsx}',
+    'src/**/*.{js,ts,jsx,tsx}',
   ],
-  important: 'html',
   presets: [baseConfig],
-  plugins: [
-    require('tailwind-scrollbar')({ nocompatible: true }),
-    require('@tailwindcss/forms')({
-      strategy: 'class', // only generate classes
-    }),
-  ]
+  theme: {
+    extend: {
+      fontFamily: {
+        sans: ['var(--font-geist-sans)', ...fontFamily.sans],
+        mono: ['var(--font-geist-mono)', ...fontFamily.mono],
+      },
+    },
+  },
 } satisfies Config
-
-
