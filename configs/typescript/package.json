@@ -1,10 +1,9 @@
 {
   "name": "@mj/tsconfig",
-  "version": "0.1.0",
   "private": true,
-  "main": "index.js",
+  "version": "0.1.1",
   "files": [
     "base.json",
-    "server.json"
+    "api-nest"
   ]
 }
