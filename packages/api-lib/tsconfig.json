@@ -1,21 +1,8 @@
 {
-  "extends": "@mj/tsconfig/server.json",
+  "extends": "@mj/tsconfig/base.json",
   "compilerOptions": {
-    /* Paths */
-    "baseUrl": ".",
-    "rootDir": ".",
-    "paths": {
-      "@src/*": ["./src/*"]
-    }
+    "tsBuildInfoFile": "node_modules/.cache/tsbuildinfo.json",
   },
-  "include": [
-    "./**/*.ts",
-    "./**/*.tsx",
-    "./*.ts",
-    "./**/*.mdx",
-    "../ui/components/Buttons/MyButtons.tsx",
-    "postcss.config.mjs",
-    "postcss.config.js"
-  ],
-  "exclude": ["node_modules"]
+  "include": ["*.ts", "lib"],
+  "exclude": ["node_modules"],
 }

@@ -2,12 +2,25 @@
   "name": "@mj/api-lib",
   "version": "0.1.1",
   "private": true,
-  "scripts": {},
+  "scripts": {
+    "clean": "rm -rf .turbo node_modules",
+    "format": "prettier --check . --ignore-path ../../.gitignore",
+    "lint": "eslint .",
+    "typecheck": "tsc --noEmit"
+  },
   "devDependencies": {
-    "@mj/api": "^0.1.0",
-    "@mj/tsconfig": "^0.1.0",
+    "@mj/eslint": "^0.1.1",
+    "@mj/prettier": "^0.1.1",
+    "@mj/tsconfig": "^0.1.1",
     "@types/node": "^20.11.5",
     "eslint": "^8.56.0",
+    "prettier": "^3.2.4",
     "typescript": "^5.3.3"
-  }
+  },
+  "eslintConfig": {
+    "extends": [
+      "@mj/eslint/base"
+    ]
+  },
+  "prettier": "@mj/prettier"
 }
