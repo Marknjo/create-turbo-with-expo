@@ -1,0 +1,16 @@
+{
+  "version": "0.1.0",
+  "name": "@mj/ui-shared",
+  "main": "index.ts",
+  "dependencies": {
+    "dripsy": "^4.3.4",
+    "moti": "^0.27.2",
+    "react-native": "0.73.2",
+    "solito": "^4.2.0"
+  },
+  "files": [
+    "./components",
+    "./features"
+  ],
+  "sideEffects": false
+}
