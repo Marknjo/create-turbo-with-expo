@@ -1,18 +1,14 @@
-import { Config } from 'tailwindcss'
-import { theme } from './utils'
-import { ThemeConfig } from 'tailwindcss/types/config';
+import type { Config } from 'tailwindcss'
+import animate from 'tailwindcss-animate'
+import { ThemeConfig } from 'tailwindcss/types/config'
 
+import { theme } from './lib'
 
 export default {
-  content: [''],
+  darkMode: ['class'],
+  content: ['src/**/*.{ts,tsx}'],
   theme: {
-    ...theme as Partial<ThemeConfig>
+    ...(theme as Partial<ThemeConfig>),
   },
-  plugins: [
-    require('tailwind-scrollbar')({ nocompatible: true }),
-    require('@tailwindcss/forms')({
-      strategy: 'class', // only generate classes
-    }),
-  ]
+  plugins: [animate],
 } satisfies Config
-
