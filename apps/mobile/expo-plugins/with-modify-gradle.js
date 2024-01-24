@@ -1,7 +1,7 @@
 // This plugin is required for fixing `.apk` build issue
 // It appends Expo and RN versions into the `build.gradle` file
 // References:
-// https://github.com/t3-oss/create-t3-turbo/issues/120
+// https://github.com/t3-oss/create-turbo-with-expo/issues/120
 // https://github.com/expo/expo/issues/18129
 
 /** @type {import("@expo/config-plugins").ConfigPlugin} */

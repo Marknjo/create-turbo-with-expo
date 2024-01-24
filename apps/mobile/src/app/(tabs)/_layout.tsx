@@ -1,11 +1,13 @@
-import { Pressable, useColorScheme } from 'react-native'
-import { Link, Tabs, router } from 'expo-router'
-import Colors from '@constants/Colors'
+import React from 'react'
 import FontAwesome from '@expo/vector-icons/FontAwesome'
+import { Link, Tabs } from 'expo-router'
+import { Pressable } from 'react-native'
 
-/**
- * You can explore the built-in icon families and icons on the web at https://icons.expo.fyi/
- */
+import Colors from '@/constants/Colors'
+import { useColorScheme } from '@/hooks/useColorScheme'
+import { useClientOnlyValue } from '@/hooks/useClientOnlyValue'
+
+// You can explore the built-in icon families and icons on the web at https://icons.expo.fyi/
 function TabBarIcon(props: {
   name: React.ComponentProps<typeof FontAwesome>['name']
   color: string
@@ -20,7 +22,9 @@ export default function TabLayout() {
     <Tabs
       screenOptions={{
         tabBarActiveTintColor: Colors[colorScheme ?? 'light'].tint,
-        headerShown: false,
+        // Disable the static render of the header on web
+        // to prevent a hydration error in React Navigation v6.
+        headerShown: useClientOnlyValue(false, true),
       }}
     >
       <Tabs.Screen
@@ -29,12 +33,8 @@ export default function TabLayout() {
           title: 'Tab One',
           tabBarIcon: ({ color }) => <TabBarIcon name="code" color={color} />,
           headerRight: () => (
-            <Link href="/users/marcus" asChild>
-              <Pressable
-                onPress={() => {
-                  router.setParams({ id: 'Marcus' })
-                }}
-              >
+            <Link href="/modal" asChild>
+              <Pressable>
                 {({ pressed }) => (
                   <FontAwesome
                     name="info-circle"
@@ -46,23 +46,13 @@ export default function TabLayout() {
               </Pressable>
             </Link>
           ),
-          headerShown: true,
         }}
       />
-
       <Tabs.Screen
         name="two"
         options={{
           title: 'Tab Two',
           tabBarIcon: ({ color }) => <TabBarIcon name="code" color={color} />,
-        }}
-      />
-
-      <Tabs.Screen
-        name="users"
-        options={{
-          href: '/users',
-          tabBarIcon: ({ color }) => <TabBarIcon name="user" color={color} />,
         }}
       />
     </Tabs>

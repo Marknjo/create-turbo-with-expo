@@ -1,34 +1,27 @@
+import { Platform, StyleSheet } from 'react-native'
 import { StatusBar } from 'expo-status-bar'
-import { Platform, StyleSheet, useColorScheme } from 'react-native'
-import { SafeAreaView } from 'react-native-safe-area-context'
 
-import { UserDetailScreen } from '@mj/ui/pages/user'
-import { View } from '@mj/ui/components/Layouts/view'
-import { H1 } from '@mj/ui/components/Typography'
-import Colors from '@constants/Colors'
+import EditScreenInfo from '@/components/EditScreenInfo'
+import { Text, View } from '@/components/Themed'
 
 export default function ModalScreen() {
-  const colorScheme = useColorScheme()
   return (
-    <SafeAreaView
-      style={[
-        styles.wrapper,
-        { backgroundColor: Colors[colorScheme ?? 'light'].background },
-      ]}
-    >
-      <View>
-        <H1>Modal</H1>
-      </View>
-      <UserDetailScreen />
+    <View style={styles.container}>
+      <Text style={styles.title}>Modal</Text>
+      <View
+        style={styles.separator}
+        lightColor="#eee"
+        darkColor="rgba(255,255,255,0.1)"
+      />
+      <EditScreenInfo path="app/modal.tsx" />
+
+      {/* Use a light status bar on iOS to account for the black space above the modal */}
       <StatusBar style={Platform.OS === 'ios' ? 'light' : 'auto'} />
-    </SafeAreaView>
+    </View>
   )
 }
 
 const styles = StyleSheet.create({
-  wrapper: {
-    flex: 1,
-  },
   container: {
     flex: 1,
     alignItems: 'center',
