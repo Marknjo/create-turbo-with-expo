@@ -1,8 +1,10 @@
 {
   "cSpell.words": [
     "autodocs",
+    "bools",
     "BSON",
     "Chamas",
+    "Dripsy",
     "ianvs",
     "localforage",
     "manypkg",
@@ -10,32 +12,30 @@
     "nativewind",
     "Parens",
     "Pesa",
+    "prettiercache",
+    "shadcn",
     "shemas",
     "solito",
+    "sonner",
     "superjson",
     "tsbuildinfo",
     "tsnd",
     "Turborepo",
+    "typecheck",
     "VIEWPORTS"
   ],
-
-  "[prisma]": { "editor.defaultFormatter": "Prisma.prisma" },
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": "explicit"
   },
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.formatOnSave": true,
-  "eslint.rules.customizations": [{ "rule": "*", "severity": "warn" }],
   "eslint.workingDirectories": [
-    { "pattern": "apps/*/" },
-    { "pattern": "packages/*/" },
-    { "pattern": "configs/*/" }
+    {
+      "mode": "auto"
+    }
   ],
   "tailwindCSS.experimental.configFile": "./configs/tailwind/index.ts",
-  "typescript.enablePromptUseWorkspaceTsdk": true,
-  "typescript.tsdk": "node_modules/typescript/lib",
-  "json.schemaDownload.enable": true,
   "tailwindCSS.experimental.classRegex": [
     ["clsx\\(([^)]*)\\)", "(?:'|\"|`)([^']*)(?:'|\"|`)"]
-  ]
+  ],
+
 }

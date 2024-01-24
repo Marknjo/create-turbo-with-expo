@@ -1,43 +1,50 @@
 {
-  "$schema": "https://turbo.build/schema.json",
-  "globalDependencies": ["**/.env", "**/.env.*local", "tsconfig.json"],
-  "globalEnv": [
-    "DATABASE_URL",
-    "DISCORD_CLIENT_ID",
-    "DISCORD_CLIENT_SECRET",
-    "NEXTAUTH_SECRET",
-    "NEXTAUTH_URL"
-  ],
+  "$schema": "https://turborepo.org/schema.json",
+  "globalDependencies": ["**/.env"],
   "pipeline": {
+    "topo": {
+      "dependsOn": ["^topo"]
+    },
     "build": {
       "dependsOn": ["^build"],
-      "outputs": [".next/**", ".expo/**"]
+      "outputs": [
+        ".next/**",
+        "!.next/cache/**",
+        "next-env.d.ts",
+        ".expo/**",
+        ".output/**",
+        ".vercel/output/**"
+      ]
     },
-    "start": {
-      "dependsOn": ["^build"],
-      "outputs": []
+    "dev": {
+      "persistent": true,
+      "cache": false
     },
-     "format": {
+    "format": {
       "outputs": ["node_modules/.cache/.prettiercache"],
       "outputMode": "new-only"
     },
     "lint": {
-      "outputs": []
+      "dependsOn": ["^topo"],
+      "outputs": ["node_modules/.cache/.eslintcache"]
     },
-    "dev": {
-      "cache": false,
-      "persistent": true
-    },
-    "coverage": {
-      "dependsOn": ["^build"],
-      "outputs": ["coverage/**"]
-    },
-    "test": {
-      "dependsOn": ["^build"],
-      "outputs": []
+    "typecheck": {
+      "dependsOn": ["^topo"],
+      "outputs": ["node_modules/.cache/tsbuildinfo.json"]
     },
     "clean": {
       "cache": false
+    },
+    "//#clean": {
+      "cache": false
     }
-  }
+  },
+  "globalEnv": [
+    "DATABASE_URL",
+    "AUTH_DISCORD_ID",
+    "AUTH_DISCORD_SECRET",
+    "AUTH_REDIRECT_PROXY_URL",
+    "AUTH_SECRET",
+    "AUTH_URL"
+  ]
 }
