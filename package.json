@@ -1,23 +1,46 @@
 {
-  "name": "storybook-with-solito",
+  "name": "create-turbo-with-expo",
   "private": true,
-  "license": "MIT",
+  "description": "",
+  "author": "",
   "scripts": {
-    "//": "prepare: husky install",
-    "build": "turbo run build",
-    "clean": "turbo clean && rm -rf node_modules ./**/node_modules ./**/**/node_modules ./**/**/**/node_modules pnpm-lock.yaml",
-    "clean:git": "git clean -xdf node_modules",
-    "coverage": "vitest --coverage",
-    "dev": "turbo run dev --parallel",
-    "format": "turbo format --continue -- --cache --cache-location='node_modules/.cache/.prettiercache'",
-    "format:fix": "turbo format --continue -- --write --continue -- --cache --cache-location='node_modules/.cache/.prettiercache'",
-    "lint": "turbo lint --continue -- --cache --cache-location 'node_modules/.cache/.eslintcache' && manypkg check",
-    "lint:fix": "turbo lint --continue -- --fix --cache --cache-location 'node_modules/.cache/.eslintcache' && manypkg fix",
-    "preview": "turbo run start",
-    "publish-packages": "turbo run lint build && changeset version && changeset publish",
-    "test": "turbo run test",
-    "type-check": "turbo type-check",
-    "typecheck": "turbo typecheck"
+    "build": "turbo build",
+    "clean": "git clean -xdf node_modules",
+    "clean:workspaces": "turbo clean",
+    "clean:rm": "rm -rf node_modules ./**/node_modules ./**/**/node_modules ./**/**/**/node_modules pnpm-lock.yaml",
+    "db:push": "pnpm -F db push",
+    "db:studio": "pnpm -F db studio",
+    "dev": "turbo dev --parallel",
+    "format": "turbo format --continue -- --cache --cache-location node_modules/.cache/.prettiercache",
+    "format:fix": "turbo format --continue -- --write --cache --cache-location node_modules/.cache/.prettiercache",
+    "lint": "turbo lint --continue -- --cache --cache-location node_modules/.cache/.eslintcache",
+    "lint:fix": "turbo lint --continue -- --fix --cache --cache-location node_modules/.cache/.eslintcache",
+    "lint:ws": "pnpm dlx sherif@latest",
+    "postinstall": "pnpm lint:ws",
+    "typecheck": "turbo typecheck",
+    "many:check": "manypkg check",
+    "many:fix": "manypkg fix",
+    "//": "prepare: husky install"
+  },
+  "devDependencies": {
+    "@manypkg/cli": "^0.21.2",
+    "@mj/prettier": "^0.1.1",
+    "@turbo/gen": "^1.11.3",
+    "lint-staged": "^15.2.0",
+    "msw": "^2.1.2",
+    "prettier": "^3.2.4",
+    "turbo": "^1.11.3",
+    "typescript": "^5.3.3"
+  },
+  "prettier": "@mj/prettier",
+  "pnpm": {
+    "overrides": {
+      "@auth/core": "0.20.0"
+    }
+  },
+  "packageManager": "pnpm@8.14.1",
+  "engines": {
+    "node": ">=20.11.0"
   },
   "lint-staged": {
     "apps/**/*.{js,ts,jsx,tsx}": [
@@ -29,20 +52,5 @@
     "*.json": [
       "prettier --write"
     ]
-  },
-  "devDependencies": {
-    "@manypkg/cli": "^0.21.2",
-    "@mj/eslint": "^0.1.1",
-    "@mj/prettier": "^0.1.1",
-    "@turbo/gen": "^1.11.3",
-    "lint-staged": "^15.2.0",
-    "msw": "^2.1.2",
-    "prettier": "^3.2.4",
-    "turbo": "latest",
-    "typescript": "^5.3.3"
-  },
-  "packageManager": "pnpm@8.14.1",
-  "engines": {
-    "node": ">=20.0.0"
   }
 }
