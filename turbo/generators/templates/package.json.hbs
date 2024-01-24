@@ -1,0 +1,30 @@
+{
+  "name": "@mj/{{ name }}",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "license": "MIT",
+  "scripts": {
+    "clean": "rm -rf .turbo node_modules",
+    "format": "prettier --check . --ignore-path ../../.gitignore",
+    "lint": "eslint .",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+     "@mj/eslint": "^0.1.1",
+    "@mj/prettier": "^0.1.1",
+    "@mj/tsconfig": "^0.1.1",
+    "eslint": "^8.56.0",
+    "prettier": "^3.2.4",
+    "typescript": "^5.3.3"
+  },
+  "eslintConfig": {
+    "extends": [
+      "@mj/eslint/base"
+    ]
+  },
+  "prettier": "@mj/prettier"
+}
