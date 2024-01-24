@@ -1,5 +1,5 @@
 /** @type {import('eslint').Linter.Config} */
-module.exports = {
+const config = {
   extends: [
     'plugin:react/recommended',
     'plugin:react-hooks/recommended',
@@ -20,3 +20,5 @@ module.exports = {
     browser: true,
   },
 }
+
+module.exports = config
