@@ -1,21 +1,24 @@
 {
   "name": "@mj/prettier",
-  "version": "0.1.1",
   "private": true,
-  "main": "index.mjs",
+  "version": "0.1.1",
+  "type": "module",
+  "exports": {
+    ".": "./index.js"
+  },
   "scripts": {
     "clean": "rm -rf .turbo node_modules",
-    "format": "prettier --check \"**/*.{mjs,ts,md,json}\"",
+    "format": "prettier --check . --ignore-path ../../.gitignore",
     "typecheck": "tsc --noEmit"
   },
-  "prettier": "@mj/prettier",
   "dependencies": {
     "@ianvs/prettier-plugin-sort-imports": "^4.1.1",
     "prettier": "^3.2.4",
-    "prettier-plugin-tailwindcss": "^0.5.11"
+    "prettier-plugin-tailwindcss": "^0.5.10"
   },
   "devDependencies": {
-    "@mj/tsconfig": "^0.1.0",
+    "@mj/tsconfig": "^0.1.1",
     "typescript": "^5.3.3"
-  }
+  },
+  "prettier": "@mj/prettier"
 }
